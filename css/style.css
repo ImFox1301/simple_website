@@ -1,0 +1,171 @@
+body{
+  font-family: 'Oswald', sans-serif;
+  background: #FFF;
+}
+
+#footer {
+  position: fixed; 
+  left: 0; bottom: 0; 
+  padding: 10px; 
+  color: #fff; 
+  width: 100%; 
+}
+
+.image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.types_list a{
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+.menu_list{
+  position: absolute;
+  top: 16px;
+  right: 60px;
+  display: flex;
+}
+
+.menu_list a{
+    text-decoration:  none;
+    list-style:   none;
+    color: #FFF;
+    font-size: 150%;
+    padding: 15px;
+}
+
+.menu_list a::before{
+    content:'';
+    width: 0px;
+    height: 4px;
+    background-color: #3AC669;  
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transition: .5s;
+
+}
+
+.menu_list a::after{
+    content: '';
+    width: 0px;
+    height: 4px;
+    background-color: #3AC669;  
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    transition: .5s;
+
+}
+
+.menu_list:hover a::before{
+    width:  50%;
+    transform: translateX(99%);
+}
+
+.menu_list:hover a::after{
+    width:  50%;
+    transform: translateX(-99%);  
+}
+
+.header{
+
+  font-family: 'Oswald', sans-serif;
+  font-size:250%;
+  color:#000000; 
+  margin:1% 5%; 
+}
+
+.borders{
+   padding: 10px;
+   border: 4px solid #000000;
+}
+
+.frame_content{
+  color:#000000;
+  margin:0% 5%;
+  font-size: 110%;
+  font-weight: 450;
+  text-indent: 1.5em; 
+  text-align: justify;
+}
+
+.top_title{
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  color:#FFF;
+  font-size:400%;
+  margin:0% 5%;
+
+}
+
+.title{
+  font-family: 'Oswald', sans-serif;
+  color:#000000;
+  font-size:250%;
+  margin:0% 5%;
+
+}
+
+.nav_menu{
+  margin:2.3% 22%;
+  position: absolute;
+}
+
+ul.dws-ul{
+  display: flex ;
+  padding: 0px;
+}
+
+li.dws-li{
+  list-style:   none;
+  padding: 10px;
+}
+
+li.dws-li a{
+  text-decoration:  none;
+  font-size:  20px;
+  color: #FFF;
+  position:   relative; 
+}
+
+
+li.dws-li a::before{
+    content: '';
+    width: 0px;
+    height: 4px;
+    background-color: #3AC669;  
+    position: absolute ;
+    top: 100%;
+    left: 0%;
+    transition: .5s;
+
+}
+
+li.dws-li a::after{
+    content: '';
+    width: 0px;
+    height: 4px;
+    background-color: #3AC669;  
+    position: absolute ;
+    top: 100%;
+    right: 0%;
+    transition: .5s;
+
+}
+
+li.dws-li:hover a::before{
+    width:  50%;
+    transform: translateX(99%);  
+}
+
+li.dws-li:hover a::after{
+    width:  50%;
+    transform: translateX(-99%);  
+}
